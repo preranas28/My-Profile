@@ -5,11 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
     <link rel="shortcut icon" href="ps.png" type="image/x-icon">
+    <style>
+        #resume{
+            color: orange;
+            font-weight: bolder;
+
+        }
+        .heading{
+            color: cadetblue;
+            font-style: italic;
+        }
+        .icons{
+            color: red;
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+            color: palevioletred;
+            font-weight: bolder;
+        }
+
+        .list{
+            color: brown;
+            font-weight: bold;
+        }
+        #list2{
+            font-weight: bold;
+            color: purple;
+        }
+    </style>
+
+
 </head>
 <body>
     <!-- Header Section --> 
     <header>
-        <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+        <p class="icons"> <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
           </svg>
@@ -29,7 +60,7 @@
 
           
 
-          <a href="assets/resume.pdf" download="">
+          <a href="assets/resume.pdf" download="" id="resume">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-arrow-down-fill" viewBox="0 0 16 16">
                 <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M8 5a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5A.5.5 0 0 1 8 5"/>
               </svg> Resume</a>
@@ -52,17 +83,17 @@
     <section>
         <!-- HOME Section -->
         <section id="home">
-            <h2>Professional Summary &nbsp; &nbsp; &nbsp; <small></small> </h2>
+            <h2 class="heading">Professional Summary &nbsp; &nbsp; &nbsp; <small></small> </h2>
             <ul>
                 <li>Having 1 years of experience in developing Single page Web Applications using Angular 8, HTML5, CSS3, Bootstrap 5, JavaScript, TypeScript</li>
-                <li>Experience on working with version control system - GIT and GitHub</li>
-                <li>Experience working with JIRA for user stories and bug tracking</li>
+                <li class="list">Experience on working with version control system - GIT and GitHub</li>
+                <li class="list">Experience working with JIRA for user stories and bug tracking</li>
                 <li>Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li>
-                <li>Working exposure on ID's like VS Code and Notepad++</li>
+                <li class="list">Working exposure on ID's like VS Code and Notepad++</li>
                 <li>Good working experience under Agile methodologies environment</li>
                 <li>Experience in using Chrome Developer Tool for debugging and Troubleshooting the code</li>
                 <li>Knowledge of NodeJS</li>
-                <li>Ability to work with people at all levels in the program</li>
+                <li id="list2">Ability to work with people at all levels in the program</li>
             </ul>
         </section>
         <hr>
@@ -70,7 +101,7 @@
         <!-- Technology Stack -->
 
         <section id="techstack">
-            <h2>My Technology Stack is</h2>
+            <h2 class="heading">My Technology Stack is</h2>
             <table border="1">
                 <thead>
                     <tr>
@@ -112,7 +143,7 @@
         <!-- Project Section
          -->
         <section id="project">
-            <h1>Project Details</h1> 
+            <h1 class="heading">Project Details</h1> 
             <hr>
             <strong>Name: <u>Student Management</u></strong> <br> <br>
             <strong><u>Enviroment</u></strong> Angular, react, Java, Javascript, HTML, CSS, Bootstrap, GitHub, Agile and Jira. <br> <br>
@@ -136,7 +167,7 @@
         <!-- Education details -->
         
         <section id="edu">
-            <h2>Education Details</h2>
+            <h2 class="heading">Education Details</h2>
             <table border="1">
                 <thead>
                     <tr>
