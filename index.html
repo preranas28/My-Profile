@@ -7,7 +7,13 @@
     <link rel="shortcut icon" href="ps.png" type="image/x-icon">
     <!-- CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google CDN link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     <style>
+        
         #resume{
             color: orange;
             font-weight: bolder;
@@ -18,6 +24,7 @@
             font-style: italic;
             background-color: beige;
             font-weight: bold;
+            text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
             
         }
         .icon{
@@ -63,8 +70,19 @@
             padding-top: 15px;
         }
 
-        th, td{
+        table, tr, th, td{
             padding: 10px;
+            border-collapse: collapse;
+            border: 2px solid rgb(232, 195, 128);
+        }
+        .techTable {
+            width: 50px;
+        }
+        .fontsHeader{
+            font-family: "Roboto", sans-serif;
+        }
+        .fontsAll{
+            font-family: "Poppins", sans-serif;
         }
 
         
@@ -74,7 +92,7 @@
 </head>
 <body>
     <!-- Header Section --> 
-    <header>
+    <header class="fontsHeader">
         <p> 
             <i class="fa fa-user fa-lg" aria-hidden="true"></i>
             <span  class="headerinfo">Prerana Sarode</span> 
@@ -95,7 +113,7 @@
     </header>
 
     <!-- Navigation Section -->
-    <nav>
+    <nav class="fontsHeader">
         <a href="#home" class="a">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="#techstack" class="a">TECH STACK</a>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="#project" class="a">PROJECTS</a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -108,16 +126,16 @@
     <section>
         <!-- Carrer Objectives section -->
 
-        <h2 class="heading">Carrer Objectives</h2>
-        <p>
+        <h2 class="heading fontsHeader">Carrer Objectives</h2>
+        <p class="fontsAll">
             To work in organization where I can learn and grow my skills and help  organizational growth.
         </p>
         <!-- HOME Section -->
         <section id="home">
-            <h2 class="heading">Professional Summary &nbsp; &nbsp; &nbsp; <small></small> </h2>
-            <ul>
+            <h2 class="heading fontsHeader">Professional Summary &nbsp; &nbsp; &nbsp; <small></small> </h2>
+            <ul class="fontsAll">
                 <li>Having 1 years of experience in developing Single page Web Applications using <span id="angular">Angular 8</span>, HTML5, CSS3, Bootstrap 5, JavaScript, TypeScript</li>
-                <li id="list">Experience on working with version control system - GIT and GitHub</li>
+                <li id="list" class="fontsAll">Experience on working with version control system - GIT and GitHub</li>
                 <li>Experience working with JIRA for user stories and bug tracking</li>
                 <li>Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li>
                 <li>Working exposure on ID's like VS Code and Notepad++</li>
@@ -132,8 +150,8 @@
         <!-- Technology Stack -->
 
         <section id="techstack">
-            <h2 class="heading">My Technology Stack is</h2>
-            <table border="1">
+            <h2 class="heading"> My Technology Stack is </h2>
+            <table class= "techTable fontsAll">
                 <thead>
                     <tr>
                         <th>Sr. No</th>
@@ -174,16 +192,18 @@
         <!-- Project Section
          -->
         <section id="project">
-            <h1 class="heading">Project Details</h1> 
-            <hr>
-            <strong>Name: <u>Student Management</u></strong> <br> <br>
+            <h1 class="heading fontsHeader">Project Details</h1> 
+            
+            <span class="fontsAll">
+                <strong>Name: <u>Student Management</u></strong> <br> <br>
             <strong><u>Enviroment</u></strong> Angular, react, Java, Javascript, HTML, CSS, Bootstrap, GitHub, Agile and Jira. <br> <br>
             <strong>Team Size:</strong> 06  &nbsp; &nbsp; <strong>Duration:</strong> <i>2021-1 <sup>st</sup>- July till <u>present</u></i> <br><br>
             <strong>Project Description:</strong> This project is main,y used for student management in colleges, where it helps to manage student record like <br>
                  student registration , student update, and to see all the list of academic activities like score card and attendance.
+            </span>
             <hr>
-            <h1>Roles and Responsibilities</h1>
-            <ul>
+            <h1 class="fontsHeader">Roles and Responsibilities</h1>
+            <ul class="fontsAll">
                 <li>Designed and Implemented the user interface using HTML5 and CSS3</li>
                 <li>Work Closely with backend developers for code integration</li>
                 <li>Identifying and troubleshooting issues in front end codebase</li>
@@ -198,8 +218,8 @@
         <!-- Education details -->
         
         <section id="edu">
-            <h2 class="heading">Education Details</h2>
-            <table border="1">
+            <h2 class="heading fontsHeader">Education Details</h2>
+            <table border="1" class="fontsAll">
                 <thead>
                     <tr>
                         <th>Sr.no</th>
@@ -247,7 +267,10 @@
             <br>
             
             <!-- Copy right section -->
+            <span class="fontsAll">
+                
             Copyright &copy;PreranaSarode
+            </span>
 
         </section>
         

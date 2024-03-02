@@ -6,13 +6,16 @@
     <title>CSS Box Model</title>
     <style>
         p{
-            border: 2px solid cadetblue;
+            border: 5px solid cadetblue;
         }
 
         #summary{
             font-size: larger;
-            padding-left: 30px;
-            margin: 30px;
+            /* padding-left: 30px;
+            margin: 30px; */
+            padding: 30px;
+            width: 200px;
+            box-sizing: content-box; 
         }
 
         #project{
@@ -22,12 +25,36 @@
             padding-left: 40px;
             padding-bottom: 40px;
             padding-right: 40px; */
-            padding: 40px 10px;
+            padding: 30px;
+            width: 200px;
+            box-sizing: border-box;
         }
+
+        #one{
+            font-size: 30px;
+        }
+
+        #two{
+            font-size: 30px;
+        }
+        #para1{
+            font-size: 2 rem;
+        }
+        #para2{
+            font-size: 2 rem;
+        }
+
     </style>
 </head>
 <body>
     <p id="summary">Professional Summary</p>
     <p id="project">Project Section</p>
+
+    <div id="one">
+        <p id="para1">Paragraph one</p>
+    </div>
+    <div id="two">
+        <p id="para2">Paragraph Two</p>
+    </div>
 </body>
 </html>
