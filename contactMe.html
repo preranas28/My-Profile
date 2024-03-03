@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <style>
+        label, button{
+            font-size: large;
+            color: rgb(6, 96, 99);
+           
+        }
+        /* Attribute Selector */
+        input[type="text"], input[type="email"]{
+            border: 2px solid orange;
+            border-radius:8px;
+            padding: 5px 5px ;
+            width: 250px;
+            text-transform: capitalize;
+            color: blueviolet;
+        }
+        input[type="email"]{
+            text-transform: lowercase; 
+        }
+        button[type="submit"]:hover {
+            color: rgb(216, 144, 9);
+            border-radius:8px;
+            border: 2px solid orange;
+        }
+        
+
+    </style>
 </head>
 <body>
-    
+    <h2>Contact Me</h2>
+    <form action="">
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="">Full Name</label></td>
+                    <td><input type="text"> <br></td>
+                </tr>
+                <tr>
+                    <td><label for="">Email</label></td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Question</label></td>
+                    <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Send Question</button></td>
+                    <td><button type="reset">Clear Info</button></td>
+                </tr>
+            </tbody>
+        </table>
+        
+       
+        
+        
+    </form>
 </body>
 </html>
