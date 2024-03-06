@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display properties</title>
+    <style>
+        h2,p,span{
+            border: 2px solid orangered;
+        }
+        body{
+            border: 2px solid blue;
+        }
+        p{
+            display: inline-block;
+
+            /* jitna content hai utna hi space lega */
+        }
+        #hardworking{
+            width: 200px;
+            height: 100px;
+            /* there will be no effect if we apply height and 
+            width to inline element */
+        }
+        #dedicated{
+            /* display: none; */
+            visibility: hidden;
+        }
+        #para{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Personal Strengths</h2>
+    <p id="hardworking">hard working</p>
+    <p id="dedicated">Dedicated</p>
+    <p>Average Learner</p>
+    <br>
+    <span>Lorem, ipsum.</span>
+    <span>Lorem ipsum dolor sit amet.</span>
+    <span>Lorem, ipsum dolor.</span>
+    <hr>
+    <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, cumque!</p>
+    <img src="assets/developer.png" alt="">
+</body>
+</html>
