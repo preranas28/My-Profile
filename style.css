@@ -22,6 +22,15 @@
     text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
     
 }
+.display{
+    top:0px;
+    position: fixed;
+}
+.display2{
+    margin-top:40px;
+    position: fixed;
+}
+
 .icon{
     color: brown;
     
@@ -83,8 +92,16 @@ header{
     margin: 20px auto;
 }
 
+#contain1{
+    margin-top: 100px;
+
+}
+
 #foot{
     padding-right: 50px;
+    bottom: 10px;
+    margin-left: 50px;
+    position: fixed;
 }
 li{
     padding-top: 15px;
