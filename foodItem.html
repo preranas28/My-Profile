@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Item</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .card{
+            width: 400px;
+            height: 480px;
+            border: 1px solid rgb(132, 121, 121);
+            border-radius: 10px;
+            margin: 20px auto;
+            /* position: relative; */
+        }
+        #item-photo{
+            width: 100%;
+            border-radius: 20px;
+            padding: 8px;
+           
+        }
+        .item-text{
+            padding: 10px;
+
+           
+        }
+        #best-seller{
+            color: cadetblue;
+            border-radius: 20px;
+            border: 2px solid wheat;
+            padding: 5px 15px;
+            position: relative;
+            /* top: 15px;
+            left: 15px; */
+            bottom: 310px;
+            left: 20px ;
+
+        }
+        #must-try{
+            color: black;
+            border-radius: 20px;
+            border: 2px solid peachpuff;
+            padding: 5px 15px;
+            position: relative;
+            bottom: 50px;
+            left: 190px ;
+
+        }
+
+    </style>
+</head>
+<body>
+    <section class="card">
+        <img id="item-photo" src="assets/burger.jpg" alt="">
+        <button type="button" id="best-seller">Best Seller</button>
+       <button type="button" id="must-try">Must Try</button>
+        <section class="item-text">
+            <h2>Veg Supreme Burger</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        </section>
+    </section>
+</body>
+</html>
