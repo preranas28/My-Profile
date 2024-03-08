@@ -27,7 +27,6 @@
     position: fixed;
 }
 .display2{
-    margin-top:40px;
     position: fixed;
 }
 
@@ -93,16 +92,11 @@ header{
 }
 
 #contain1{
-    margin-top: 100px;
+    margin-top: 50px;
 
 }
 
-#foot{
-    padding-right: 50px;
-    bottom: 10px;
-    margin-left: 50px;
-    position: fixed;
-}
+
 li{
     padding-top: 15px;
 }
@@ -139,4 +133,11 @@ table, tr, th, td{
 /* Pseudo Element */
 #projectDesc::selection{
     background-color: rgb(239, 191, 104);
+}
+.container-foot{
+    padding-left: 50px;
+}
+#foot{
+    width: 100%;
+    padding-right: 50px;
 }
